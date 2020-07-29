@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap">
+	<link rel="stylesheet" type="text/css" href="~/fontawesome/all.css"/>
+	<link rel="stylesheet" type="text/css" href="~/light-box/lightbox.css"/>
+	<link rel="stylesheet" type="text/css" href="~/css/style.css"/>
+    
+<script type="text/javascript" src="~/js/jquery.min.js"></script>
+<script type="text/javascript" src="~/js/bootstrap.js"></script>
+<script type="text/javascript" src="~/fontawesome/all.js"></script>
+<script type="text/javascript" src="~/light-box/lightbox.js"></script>
+<script type="text/javascript" src="~/js/scripts.js"></script>    
+
+
+</head>
+<body>
+
+    <header>
+        <div id="so_ic_mo_em_bar">
+            <!--#so_ic_mo_em_bar start-->
+            <div class="container">
+                <div class="row m-0">
+
+                    <div class="col-sm-12 col-md-2 p-0">
+                        <div class="social_icons">
+                            <a href="#"><span class="facebook"><i class="fab fa-facebook"></i></span></a>
+                            <a href="#"><span class="twitter"><i class="fab fa-twitter"></i></span></a>
+                            <a href="#"><span class="google"><i class="fab fa-google-plus"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-10 p-0">
+                        <div class="email_mobile">
+                            <span class="number"><i class="fas fa-mobile-alt"></i> +91-00000-00000</span>
+                            <span class="email"><i class="fas fa-envelope"></i> abc123@gmail.com</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div><!--#so_ic_mo_em_bar end-->
+
+        <div id="logo_navbar_bar">
+            <!--#logo_navbar_bar start-->
+            <div class="container">
+                <div class="row m-0">
+                    <div class="col-sm-12 p-0">
+                        <div class="logo_navbar">
+                            <nav class="navbar navbar-expand-md p-0">
+                                <div class="navbar-brand logo">
+                                    <a href="index.html"><h1>School <span>Management</span></h1></a>
+                                </div>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item nav-link">
+                                            @Html.ActionLink("Home", "Index", "Home")
+                                        </li>
+                                        <li class="nav-item nav-link">
+                                            @Html.ActionLink("Login", "Login", "Home")
+                                        </li>
+                                        <li class="nav-item nav-link">
+                                            @Html.ActionLink("Contact", "Contact", "Home")
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--#logo_navbar_bar end-->
+    </header>
+
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div id="main_footer" style="background-image: url('images/footer.jpg');">
+            <div class="container">
+                <div class="row m-0">
+
+                    <div class="col-sm-12 col-md-4 p-0">
+                        <div class="about">
+                            <h3>About School</h3>
+                            <p>
+                                Our aim is to make the institute a centre of excellence where we all are fully engaged educationally and emotionally to make the students capable by developing their virtues and moral values. We inspire our students towards noble aims which will help them to become self responsible, a good human being who believe in God.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 p-0">
+                        <div class="links">
+                            <h3>Links</h3>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Staffs & Students</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 p-0">
+                        <div class="contact">
+                            <h3>Contact Us</h3>
+                            <p>abc123@gmail.com</p>
+                            <p>Near Bus Stand, Auckland</p>
+                            <p>+91-00000-00000</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="copyright_footer">
+            <div class="container-fluid p-0">
+                <div class="row m-0">
+                    <div class="col-sm-12 p-0">
+                        <p>&copy; 2020, School Project</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+</html>

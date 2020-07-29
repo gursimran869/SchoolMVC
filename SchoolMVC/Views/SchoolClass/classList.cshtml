@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SchoolMVC.Models.Class>
+
+@{
+    ViewBag.Title = "classList";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <h2>class List</h2>
+
+            <p>
+                @Html.ActionLink("Add New CLass Details ", "Create")
+            </p>
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ClassName)
+                    </th>
+                    <th>Edit </th>
+                    <th>Delete </th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ClassName)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.id })
+                        </td>
+                        <td>
+                            @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+
+            <h3 class="nav-link"> @Html.ActionLink("Back to Working Dashboard ", "AdminPannel", "Home")</h3>
+
+
+        </div>
+
+
+    </div>
+
+</div>

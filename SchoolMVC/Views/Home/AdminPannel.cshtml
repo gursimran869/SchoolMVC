@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "AdminPannel";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <h1>Wel Come to the Admin Pannel</h1>
+
+            <h2 class="btn btn-outline-success"> @Html.ActionLink("Class Management   ", "classList", "SchoolClass") </h2>
+
+            <h2 class="btn btn-outline-success"> @Html.ActionLink("Staff Management   ", "StaffList", "Staff") </h2>
+
+
+            <h2 class="btn btn-outline-success"> @Html.ActionLink("Student Management   ", "StudentList", "Student") </h2>
+
+
+            <h2 class="btn btn-outline-success"> @Html.ActionLink("Queries Management   ", "AllMessage", "Home") </h2>
+
+
+            <h3 class="nav-link"> @Html.ActionLink("Back to Main Site  ", "Index", "Home")</h3>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+

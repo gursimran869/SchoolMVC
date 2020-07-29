@@ -1,0 +1,609 @@
+*.html,body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+@media(max-width: 992px){
+	.container{
+		max-width: 100%
+	}
+	}
+
+#so_ic_mo_em_bar{
+	background-color: rgba(0,0,0,0.8);
+	padding: 5px 0;
+}
+#so_ic_mo_em_bar .social_icons .facebook,
+#so_ic_mo_em_bar .social_icons .twitter,
+#so_ic_mo_em_bar .social_icons .google{
+	color: #fff;
+	font-size: 1.4em;
+	margin-right: 10px;
+}
+#so_ic_mo_em_bar .email_mobile .number,
+#so_ic_mo_em_bar .email_mobile .email{
+	color: #fff;
+	font-size: 1em;
+	font-weight: 300;
+	margin-left: 20px;
+	letter-spacing: 0.8px;
+}
+#so_ic_mo_em_bar .email_mobile{
+	height:100%;
+	display: flex;
+	justify-content: right;
+	align-items:center;
+}
+#so_ic_mo_em_bar .email_mobile .number .fa-mobile-alt,
+#so_ic_mo_em_bar .email_mobile .email .fa-envelope{
+	margin-right: 2px;
+}
+@media(max-width:768px){
+	#so_ic_mo_em_bar .social_icons{
+		text-align:center;
+		padding:5px 0;
+	}
+	#so_ic_mo_em_bar .email_mobile{
+		display:flex;
+		justify-content: center;
+		align-content: center;
+		padding:5px 0;
+	}
+}
+
+/***********************Logo Navbar Styles********************************/
+#logo_navbar_bar .logo_navbar .navbar>.navbar-brand h1{
+	font-size: 2em;
+	font-weight: 900;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: brown;
+}
+#logo_navbar_bar .logo_navbar .navbar>.navbar-brand>a{
+	text-decoration: none;
+}
+#logo_navbar_bar .logo_navbar .navbar>.navbar-brand{
+	max-width: 40%;
+	text-align:center;
+}
+#logo_navbar_bar .logo_navbar .navbar>.navbar-brand h1>span{
+	display: block;
+	font-size: 0.4em;
+	font-weight: 300;
+}
+#logo_navbar_bar .logo_navbar .navbar .navbar-toggler{
+	background-color: brown;
+	border:none;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+#logo_navbar_bar .logo_navbar .navbar .navbar-toggler>.navbar-toggler-icon{
+	background-color: white;
+	width:100%;
+	height:2px;
+	position: relative;
+	transition: all .3s;
+}
+#logo_navbar_bar .logo_navbar .navbar .navbar-toggler>.navbar-toggler-icon::before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	left: 0;
+	top:-7px;
+}
+#logo_navbar_bar .logo_navbar .navbar .navbar-toggler>.navbar-toggler-icon::after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	left: 0;
+	bottom:-7px;
+}
+#logo_navbar_bar .logo_navbar .navbar .navbar-toggler:hover .navbar-toggler-icon::before{
+	top:-8px;
+}
+#logo_navbar_bar .logo_navbar .navbar .navbar-toggler:hover .navbar-toggler-icon::after{
+	bottom:-8px;
+}
+#logo_navbar_bar .logo_navbar .navbar #navbarSupportedContent ul>li:not(:last-child){
+	margin-right: 15px;
+}
+#logo_navbar_bar .logo_navbar .navbar #navbarSupportedContent ul>li>a{
+		color: brown;
+	  font-size: 1.2em;
+	font-weight: 700;
+	}
+@media(min-width: 768px){
+	#logo_navbar_bar .logo_navbar .navbar .navbar-toggler{
+		display: none;
+	}
+}
+@media(max-width: 768px){
+	#logo_navbar_bar .container{
+		max-width: 100%;
+		width: 100%;
+		padding:0;
+	}
+	#logo_navbar_bar .logo_navbar .navbar #navbarSupportedContent{
+	  background-color: brown;
+		padding:20px 50px;
+  }
+	#logo_navbar_bar .logo_navbar .navbar .navbar-brand{
+		width: 100%;
+	}
+	#logo_navbar_bar .logo_navbar .navbar .navbar-toggler{
+		margin-right: 50px;
+	}
+	#logo_navbar_bar .logo_navbar .navbar #navbarSupportedContent ul>li>a{
+		color: white;
+		padding:15px 0;
+	}
+}
+
+
+
+/*************************************Header Banner Styles*******************************************/
+#header_banner .banner{
+	height: 500px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding:0 200px;
+	text-align: center;
+}
+#header_banner .banner>h1{
+	color: white;
+	font-weight: 900;
+}
+#header_banner .banner>p{
+	color: brown;
+	font-size: 2em;
+	font-weight: 500;
+}
+@media(max-width: 992px){
+	#header_banner .banner{
+		height: 400px;
+	}
+	#header_banner .banner{
+		padding: 0 100px;
+	}
+	#header_banner .banner>h1{
+		font-size: 2.3em;
+	}
+	#header_banner .banner>p{
+		font-size: 1.5em;
+	}
+}
+@media(max-width: 768px){
+	#header_banner .banner{
+		padding: 0 50px;
+	}
+	#header_banner .banner>h1{
+		font-size: 1.8em;
+	}
+	#header_banner .banner>p{
+		font-size: 1.2em;
+	}
+}
+
+
+/**************************Services Styles******************/
+#services{
+	padding:80px 0;
+}
+#heading{
+	text-align: center;
+}
+#heading>h1{
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: brown;
+	display: inline-block;
+	position: relative;
+}
+#heading>h1::after{
+	position: absolute;
+	content:'';
+	left:50%;
+	transform:translateX(-50%);
+	bottom:-5px;
+	width: 80%;
+	height:4px;
+	background-color: rgba(0,0,0,0.8);
+}
+#heading>h1::before{
+	position: absolute;
+	content:'';
+	left:50%;
+	transform:translateX(-50%);
+	bottom:-8px;
+	width: 80%;
+	height:2px;
+	background-color: rgba(0,0,0,0.8);
+}
+#services #heading{
+  padding-bottom: 30px;
+}
+#services .col-md-4{
+	padding: 20px 10px;
+}
+#services .service_box{
+	background-color: brown;
+	padding: 20px 10px;
+	transition: all .2s;
+}
+#services .service_box:hover{
+	box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.5);
+	transform: scale(1.05);
+}
+#services .service_box .icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#services .service_box .icon>span{
+	font-size: 5em;
+}
+#services .service_name{
+	text-align: center;
+	padding: 10px 0;
+}
+#services .service_name>h3{
+	font-weight: 500;
+	color: white;
+}
+#services .service_content{
+	 text-align: center;
+	padding:0 20px;
+}
+#services .service_content>p{
+	font-size: 0.95em;
+	word-spacing: 3px;
+	color:rgba(0,0,0,0.5);
+}
+
+
+/***************About School Styles*****************/
+#about_school{
+	background-color: #D45965;
+	padding:100px 0;
+}
+#about_school .col-md-4{
+	padding: 0 20px !important;;
+}
+#about_school .school_img{
+	width: 100%;
+	height: 400px;
+	box-shadow: 0 0 10px 2px rgba(255,0,0,0.5);
+}
+#about_school .school_img>img{
+	width: 100%;
+	height: 100%;
+}
+#about_school .col-md-8{
+	padding: 10px 10x;
+}
+#about_school .vision_mission>h3,
+#about_school .teaching_diff>h3{
+	color: white;
+}
+#about_school .vision_mission>p,
+#about_school .teaching_diff>p{
+	color: rgba(0,0,0,0.4);
+	font-weight: 300;
+	word-spacing: 2px;
+	line-height:1.6;
+	font-size: 0.95em
+}
+@media(max-width: 768px){
+	#about_school .col-md-8{
+		margin-top: 40px;
+	}
+}
+
+
+/**********************Footer Styles*******************/
+#main_footer{
+	height: auto;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 80px 0;
+}
+#main_footer .about{
+	padding: 0 30px;
+	text-align: center;
+}
+#main_footer .about>h3,
+#main_footer .links>h3,
+#main_footer .contact>h3{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 20px;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+#main_footer .about>h3::after,
+#main_footer .links>h3::after,
+#main_footer .contact>h3::after{
+	content:'';
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	bottom:-7px;
+	width: 80%;
+	height: 3px;
+	background-color: white;
+}
+#main_footer .about>h3::before,
+#main_footer .links>h3::before,
+#main_footer .contact>h3::before{
+	content:'';
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	bottom:-10px;
+	width: 80%;
+	height: 1px;
+	background-color: white;
+}
+#main_footer .about>p{
+	color: rgba(255,255,255,0.7);
+	text-align: justify;
+}
+#main_footer .links{
+	padding-left: 30px;
+}
+#main_footer .links ul{
+	list-style: none;
+	padding:0;
+}
+#main_footer .links ul>li{
+	margin-bottom: 20px;
+}
+#main_footer .links ul>li>a{
+	text-decoration: none;
+	color: rgba(255,255,255,0.7);
+}
+#main_footer .contact p{
+	color: rgba(255,255,255,0.7);
+}
+
+
+/******************copyriopyright_footer styles*****************/
+#copyright_footer{
+	background-color: rgba(0,0,0,0.8);
+	padding: 15px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#copyright_footer p{
+	margin:0;
+	color: rgba(255,255,255,0.5);
+	display: inline-block;
+}
+
+
+/***********************Staff and Students Styles******************/
+#thumbnails .col-md-6{
+	padding: 100px 40px;
+}
+#thumbnails .teachers_thumbnail,
+#thumbnails .students_thumbnail{
+	border: 2px solid brown;
+	width: 100%;
+	position: relative;
+}
+#thumbnails .teachers_thumbnail:hover,
+#thumbnails .students_thumbnail:hover{
+	border: none;
+}
+#thumbnails .teachers_thumbnail img,
+#thumbnails .students_thumbnail img{
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
+	transform: scale(0.9);
+	transition: all .2s ease-in-out;
+}
+#thumbnails .teachers_thumbnail:hover img,
+#thumbnails .students_thumbnail:hover img{
+	transform: scale(1);
+	filter: blur(4px);
+}
+#thumbnails .teachers_thumbnail::after,
+#thumbnails .students_thumbnail::after{
+	content: 'View Staffs';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.2);
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+#thumbnails .students_thumbnail::after{
+	content: 'View Students';
+}
+#thumbnails .teachers_thumbnail:hover::after,
+#thumbnails .students_thumbnail:hover::after{
+	visibility: visible;
+}
+
+
+/******************Teachers Page Styles*********************/
+#teachers{
+	padding:100px 0;
+}
+#teachers .col-md-4{
+	padding:30px;
+}
+#teachers .teacher_box{
+	border: 2px solid #CACACA;
+	height: auto;
+}
+#teachers .teacher_box>.image{
+	width: 100%;
+	height:230px;
+	padding:10px;
+	border-bottom:1px solid #CACACA;
+}
+#teachers .teacher_box>.image>img{
+	width: 100%;
+	height: 100%;
+}
+#teachers .teacher_box>.information>h3{
+	text-align: center;
+	padding:10px 0;
+	margin:0;
+	color: brown;
+}
+#teachers .teacher_box>.information>p{
+	text-align: center;
+}
+
+
+
+
+/**************************Gallery Page Styles**********************************/
+.resturant_gallery{
+    border-bottom: 1px solid #e2e2e2e2  ;
+}
+.resturant_gallery_row{
+    padding:70px 0;
+}
+.resturant_gallery_heading{
+    text-align: center;
+    color:#010101;
+    margin-bottom: 80px;
+}
+.resturant_gallery_heading>h3{
+    font-size:30px;
+}
+.resturant_gallery_heading>p{
+    color:#666666;
+    font-size:19px;
+    font-weight: 500;
+}
+.resturant_gallery_image{
+    margin-bottom:30px;
+}
+.resturant_gallery_image>img{
+    width:100%;
+    border:3px solid #d65106;
+    transition: all .3s;
+}
+.resturant_gallery_image:hover img{
+    transform: scale(1.03);
+    border:0;
+}
+.resturant_special_menu_col{
+    text-align: center;
+    padding-bottom:40px !important;
+}
+.resturant_special_menu_tabs{
+    border:1px solid #e3e3e3;
+    display: inline-block;
+}
+.resturant_special_menu_tabs>.filter-button{
+    color:#333;
+    padding:10px 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition:all .5s;
+}
+.resturant_special_menu_tabs>.filter-button:hover,
+.resturant_special_menu_tabs>.filter-button:focus{
+    background-color: #d65106;
+    color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+.resturant_special_menu_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     position: relative;
+     overflow: hidden;
+}
+.resturant_special_menu_image>img{
+    border:0;
+    transform:scale(1) !important;
+    height:250px;
+    
+}
+
+
+
+
+/***********************Contact Page Styles****************************/
+.resturant_contact_row{
+    padding:70px 0;
+}
+.resturant_contact_heading{
+    text-align: center;
+    padding-bottom:40px !important;
+}
+.resturant_contact_heading>h3{
+    color:brown;
+    font-weight: 600;
+}
+.resturant_contact_heading>p{
+    color:#666666;
+    font-size: 19px;
+    font-weight: 600;
+}
+.resturant_contact_form input
+{
+    padding:25px 20px;
+}
+.resturant_contact_form select{
+    height:53px;
+}
+.resturant_contact_form input:focus,
+.resturant_contact_form select:focus,
+.resturant_contact_form textarea:focus{
+    box-shadow: none;
+    border-color:#d65106;
+}
+.resturant_contact_form .form_button{
+    text-align: center;
+}
+.resturant_contact_form .form_button>.btn{
+    border:2px solid #d65106;
+    padding:13px 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #d65106;
+    margin-top:5px;
+}
+.resturant_contact_form .form_button>.btn:hover{
+    background-color: #333333;
+    border:2px solid #333333;
+    color: #ffffff;
+}

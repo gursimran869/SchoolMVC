@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408598.8546541236!2d174.5852784679175!3d-36.862144773394114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47fb5a9ce6fb%3A0x500ef6143a29917!2sAuckland%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1594628369977!5m2!1sen!2sin"  frameborder="0" style="border:0;width:100%;height:300px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </div>
+       
+        <form action="SubmitMessage" method="post" cellspacing="10px">
+
+            <div class="col-md-6">
+                <div class="form-group-lg">
+                    <label>Enter Name</label>
+                    <input type="text" id="txtName" name="txtName" placeholder="Enter Name " />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group-lg">
+                    <label>Enter Email</label>
+                    <input type="Email" id="txtEmail" name="txtEmail" placeholder="Enter Email " />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group-lg">
+                    <label>Enter Contact</label>
+                    <input type="number" id="txtContact" name="txtContact" placeholder="Enter Contact " />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group-lg">
+                    <label>Enter Message</label>
+                    <input type="text" id="txtMsg" name="txtMsg" placeholder="Enter Contact " />
+                </div>
+            </div>
+
+
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary" style="padding:10px;font-size:15px;" />
+
+
+
+
+        </form>
+
+          
+
+
+    </div>
+</div>
